@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Salary Calculator</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/aos.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    </head>
+    <body>
+
+        <h1 class="text-center text-white my-5 py-5 title">Tax Calculator</h1>  
+ 
+    <!-- this section contain the complete front part -->
+        <section class="background m-5 pt-3 pb-5">
+            <div class="container p-5">
+                <!--for header animation-->
+                <h1 class="text-center text-muted pt-5 animate__animated animate__heartBeat animate__infinite text-center">Tax Calculator Pakistan 2020 - 2021</h1>
+                <p class="text-secondary pt-3 text-center">This is latest tax calculator as per 2020-2021 budget presented by PTI government.</p>
+                <label for="salary">Enter Salary</label>
+                <input type="text" data-aos="fade-right" class="name py-2 form-control shadow" name="salary" id="salary" placeholder="Enter ur Salary">
+          
+        <!-- <div class="container result-box pt-3"> -->
+            <div class="result-box pt-3 pb-5" data-aos="zoom-in">
+              <!-- monthly income   -->
+            <input  type="text" value="Monthly Income" class="form-contrl bg-white py-2 text-muted" disabled><span class="ps-5"><input type="text" id="monthly_Income" value="0" class="ms-4 form-contrl py-2 text-secondary align-left border-0"></span> 
+            <br>
+            <!-- monthly tax -->
+            <input type="text" value="Monthly Tax" class="form-contrl py-2 bg-white text-muted mt-1" disabled><span class="ps-5"><input type="text" id="monthly_Tax" value="0" class="ms-4 form-contrl py-2 text-secondary align-left"></span> 
+            <br>
+            <!-- salary after tax -->
+            <input type="text" value="Salary After Tax" class="form-contrl bg-white py-2 text-muted mt-1" disabled><span class="ps-5"><input type="text" id="Salary_After_Tax" value="0" class="ms-4 form-contrl py-2 text-secondary align-left"></span> 
+            <br>
+            <!-- yearly income -->
+            <input type="text" value="Yearly Income" class="form-contrl bg-white py-2 text-muted mt-1" disabled><span class="ps-5"><input type="text" id="yearly_Income" value="0" class="ms-4 form-contrl py-2 text-secondary align-left"></span> 
+            <br>
+            <!-- yearly tax -->
+            <input type="text" value="Yearly Tax" class="form-contrl py-2 bg-white text-muted mt-1" disabled><span class="ps-5"><input type="text" id="yearly_Tax" value="0" class="ms-4 form-contrl py-2 text-secondary align-left"></span> 
+            <br>
+            <!-- yearly income after tax -->
+            <input type="text" value="Yearly Income After Tax" class="form-contrl bg-white py-2 text-muted mt-1" disabled><span class="ps-5"><input type="text" id="yearly_Income_After_Tax" value="0" class="ms-4 form-contrl text-secondary py-2 align-left"></span> 
+            <br>
+
+            <!-- buttons -->
+            <button class="btn btn-primary px-4 py-2 mt-5" onclick="calculate()">Check</button>
+            <button class="btn btn-primary px-4 py-2 ms-5 mt-5" onclick="reset()">clear</button>
+
+
+            </div>
+            </div>
+        </section>
+        
+        
+
+    <script language="javascript" type="text/javascript" src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+      <script src="assets/js/aos.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+    </body>
+</html>

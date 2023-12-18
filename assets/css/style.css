@@ -1,0 +1,19 @@
+body{
+    background-color:#625296!important;
+}
+body .title{
+    font-size: 55px;
+}
+.background{
+    background-color: white;
+}
+body .result-box input{
+    border:none;
+    font-size: 21px;
+}
+.container h1{
+    font-size: 30px;
+}
+.container .name{
+    width: 30%;
+}
